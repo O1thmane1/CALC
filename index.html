@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+    <style>
+        body{
+        background-image: url(desktop-2.jpg);
+        background-size: 200vh;
+            }
+    </style>
+</head>
+<body>
+     <form name="formcalc">
+       <h2>  NUMBER 1: <input type="number" name="txtnum1">
+          <br>
+          <br>
+          NUMBER 2: <input type="number" name="txtnum2">
+          <br>
+          <br>
+          RESULT : <input type="number" name="txtres"><br>
+          <input type="button" value="+" style="animation: cubic-bezier(0.075, 0.82, 0.165, 1);" onclick="plus()"><br>
+          <input type="button" value="-" onclick="minus()"><br>
+          <input type="button" value="*" onclick="times()"><br>
+          <input type="button" value="/" onclick="by()"><br>
+         </h2> 
+     </form>
+     <script type="text/javascript">
+     function plus()
+     {
+         var num1, num2, res;
+         num1=Number(document.formcalc.txtnum1.value);
+         num2=Number(document.formcalc.txtnum2.value);
+         res=num1+num2;
+         document.formcalc.txtres.value=res;}
+
+      
+     function minus()       
+     {
+         var num1, num2, res;
+         num1=Number(document.formcalc.txtnum1.value);
+         num2=Number(document.formcalc.txtnum2.value);
+         res=num1-num2;
+         document.formcalc.txtres.value=res;}
+
+     
+     function times()
+     {
+        var num1, num2, res;
+         num1=Number(document.formcalc.txtnum1.value);
+         num2=Number(document.formcalc.txtnum2.value);
+         res=num1*num2;
+         document.formcalc.txtres.value=res;}
+
+     function by()
+     {
+        var num1, num2, res;
+         num1=Number(document.formcalc.txtnum1.value);
+         num2=Number(document.formcalc.txtnum2.value);
+         res=num1/num2;
+         document.formcalc.txtres.value=res;}
+    
+    
+    
+    </script>
+</body>
+
+<address>
+    all rights are reserved.
+</address>
+</html>
